@@ -56,13 +56,36 @@ body {
   color: #555;
 }
 
+.hero-section {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
 }
 
 .hero-img {
   width: 100%;
+}
+
+.heading-primary {
+  margin-bottom: 3.2rem;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+
+.hero-description {
+  margin-bottom: 4.8rem;
+  font-size: 2rem;
+  /* font-weight: 400; */
+  line-height: 1.6;
 }
