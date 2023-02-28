@@ -50,7 +50,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -94,6 +94,7 @@ body {
 .btn:link {
   display: inline-block;
   font-size: 2rem;
+  font-weight: 600;
   /* text-transform: uppercase; */
   text-decoration: none;
   border-radius: 10px;
@@ -131,5 +132,5 @@ body {
 }
 
 .margin-right-sm {
-  margin-right: 1.6rem;
+  margin-right: 1.6rem !important;
 }
