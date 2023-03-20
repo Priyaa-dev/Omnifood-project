@@ -137,6 +137,8 @@ body {
 
 .delivered-meals {
   display: flex;
+  align-items: center;
+  gap: 1.6rem;
   margin-top: 8rem;
 }
 
@@ -148,10 +150,22 @@ body {
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  /* To reset the margin for the last element */
+  margin: 0;
 }
 
 .delivered-text {
   /* display: flex; */
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+.delivered-text span {
+  color: #b8651b;
+  font-weight: 700;
 }
