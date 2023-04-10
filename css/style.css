@@ -155,7 +155,7 @@ body {
 }
 
 .delivered-imgs img:last-child {
-  /* To reset the margin for the last element */
+  /* To reset the margin for last element */
   margin: 0;
 }
 
