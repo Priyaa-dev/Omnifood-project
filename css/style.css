@@ -145,13 +145,17 @@ body {
   gap: 3.2rem;
 }
 
+.main-nav-link {
+  text-decoration: none;
+  display: inline-block;
+  font: 3rem;
+  font-weight: 500;
+}
+
 .main-nav-link:link,
 .main-nav-link:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: #555;
-  font: 2rem;
-  font-weight: 500;
+  /* z-index: 1; To set priority */
+  color: #333;
   transition: all 0.3s;
 }
 
