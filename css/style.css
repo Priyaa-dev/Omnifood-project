@@ -60,13 +60,56 @@ body {
 /*  GENERAL REUSABLE COMPONENTS */
 /* **************************** */
 
-.heading-primary {
-  margin-bottom: 3.2rem;
-  font-size: 5.2rem;
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  /*  1fr 1fr */
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  /*  1fr 1fr 1fr */
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+  /*  1fr 1fr 1fr 1fr */
+}
+
+.heading-primary,
+.heading-secondary {
   font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.5px;
   color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.05;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+}
+
+.subheading {
+  display: block;
+  color: #b8651b;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .btn:visited,
@@ -272,4 +315,21 @@ body {
 .delivered-text span {
   color: #b8651b;
   font-weight: 700;
+}
+
+/* **************************** */
+/*    HOW IT WORKS SECTION      */
+/* **************************** */
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.section-how div {
+  /* padding: 100px; */
+  /* font-size: 50px; */
+}
+
+.step-img {
+  width: 50%;
 }
