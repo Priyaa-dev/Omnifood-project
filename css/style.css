@@ -159,6 +159,34 @@
 }
 
 /* **************************** */
+/*    FEATURED IN SECTION       */
+/* **************************** */
+
+.section-featured {
+  padding: 4.8rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #777;
+}
+
+.logos {
+  display: flex;
+  height: 3.2rem;
+  justify-content: space-around;
+
+  filter: brightness(0);
+  opacity: 50%;
+  /* Here 0.5 and 50% is the same value */
+}
+
+/* **************************** */
 /*    HOW IT WORKS SECTION      */
 /* **************************** */
 
@@ -193,22 +221,61 @@
   position: relative;
 }
 
-.step-img-box::before {
+.step-img-box::before,
+.step-img-box::after {
   content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
   background-color: #fdf2e9;
   width: 60%;
   /* height: 6rem; Not working */
   /* ---- Workaround ---*/
   padding-bottom: 60%;
-  border-radius: 50%;
 
   display: block;
-  position: absolute;
-
-  z-index: -1;
+  z-index: -2;
   /* Setting negative value here so it appears in background of the image */
+}
+
+.step-img-box::after {
+  background-color: #fae5d3;
+  width: 50%;
+  padding-bottom: 50%;
+  z-index: -1;
 }
 
 .step-img {
   width: 35%;
 }
+
+/* **************************** */
+/*       MEALS SECTION          */
+/* **************************** */
+
+.meals-section {
+  padding: 9.6rem 0;
+}
+
+.meal-card {}
+
+.meal-img {
+  width: 100%;
+}
+
+.meals {
+  font-size: 2 rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.meal-attribute-list {
+  list-style: none;
+}
+
+.meal-attributes {}
