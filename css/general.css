@@ -169,10 +169,35 @@ body {
 
 }
 
+.link:visited,
+.link:link {
+  text-decoration: none;
+  color: #e67e22;
+  /* Using border bottom for underline */
+  border-bottom: 1px solid currentColor;
+  /* Using currentColor property that will set the border color here same as the text color. */
+  padding-bottom: 2px;
+}
+
+.link:hover,
+.link:active {
+  color: #b8651b;
+  border-bottom: 1px solid transparent;
+  /* Using transparent keyword as it will make the border transparent for cases when we cannot remove the border */
+}
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
 
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
 strong {
   font-weight: 500;
+}
+
+.center-text {
+  text-align: center;
 }

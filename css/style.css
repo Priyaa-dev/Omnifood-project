@@ -265,9 +265,18 @@
 .meal-card {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 12px;
-  /* ----- IMPORTANT PROPERTY --- */
+  /* ----- IMPORTANT ----- */
   overflow: hidden;
   /* It means whatever overflows this container needs to be hidden */
+}
+
+.meal-card:hover {
+  /* transform: translate(2rem, 2rem); TO BE USED in case movement/transition is needed on both X and Y axis here 2rem and 2 rem */
+  transform: translateY(-1.2rem);
+  /* Used when transition is only along Y-axis */
+  transition: all 0.4s;
+  box-shadow: 0 3.2rem 7.2rem rgba(0, 0, 0, 0.06);
+
 }
 
 .meal-img {
@@ -371,4 +380,9 @@
   width: 2.5rem;
   color: #e67e22;
   font-weight: 300;
+}
+
+.all-recipes {
+  font-size: 1.8rem;
+  text-align: center;
 }
