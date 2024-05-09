@@ -186,6 +186,28 @@ body {
   /* Using transparent keyword as it will make the border transparent for cases when we cannot remove the border */
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #e67e22;
+  font-weight: 300;
+}
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }

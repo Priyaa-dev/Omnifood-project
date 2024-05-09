@@ -360,28 +360,6 @@
   padding-bottom: 2rem;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.list-icon {
-  height: 2.5rem;
-  width: 2.5rem;
-  color: #e67e22;
-  font-weight: 300;
-}
-
 .all-recipes {
   font-size: 1.8rem;
   text-align: center;
@@ -448,5 +426,12 @@
 
 .gallery-item img:hover {
   transform: scale(1.1);
+}
 
+/* **************************** */
+/*  PRICING & FEATURES SECTION  */
+/* **************************** */
+
+.pricing-section {
+  padding: 9.6rem 0;
 }
