@@ -477,6 +477,7 @@
   /* padding: 4.8rem; */
   border-radius: 11px;
   width: 75%;
+  overflow: hidden;
 }
 
 .pricing-plan--starter {
@@ -488,4 +489,21 @@
 .pricing-plan--complete {
   background-color: #fdf2e9;
   padding: 4.8rem;
+  position: relative;
+}
+
+.pricing-plan--complete::after {
+  content: "Best value";
+  text-transform: uppercase;
+  position: absolute;
+  top: 6%;
+  right: -11%;
+  transform: rotate(45deg);
+  /* rotating using transform */
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 700;
+  background-color: #ffd43b;
+  padding: 0.8rem 4.8rem;
+
 }
