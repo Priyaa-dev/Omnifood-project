@@ -60,6 +60,13 @@ body {
 /*  GENERAL REUSABLE COMPONENTS */
 /* **************************** */
 
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem hsla(28, 78%, 51%, 0.5);
+}
+
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
@@ -135,6 +142,7 @@ body {
   margin-bottom: 1.6rem;
 }
 
+.btn,
 .btn:visited,
 .btn:link {
   display: inline-block;
@@ -148,6 +156,9 @@ body {
   /* Put transition on original 'state' */
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
+
+  border: none;
+  cursor: pointer;
 }
 
 .btn--action:visited,
@@ -159,6 +170,8 @@ body {
 .btn--action:hover,
 .btn--action:active {
   background-color: #b8651b;
+  border: none;
+  cursor: pointer;
 }
 
 .btn--info:visited,
