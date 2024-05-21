@@ -1,0 +1,111 @@
+/* rem and em do NOT depend on html font size in Media queries. Instead, 1rem = 1em = 16px */
+
+/* **************************** */
+/* BELOW 1344px(Smaller desktops)*/
+/* **************************** */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ****************************** */
+/* BELOW 1200px(Landscape tablets)*/
+/* ****************************** */
+
+/* (1200 / 16 = 75) */
+@media(max-width: 75em) {
+
+  /* 9px / 16px ; Basically making the value of 1rem = 9px instead of 10px */
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+    column-gap: 6.4rem;
+  }
+
+  .heading {
+    padding: 0 3.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-section {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* ****************************** */
+/* BELOW 944px(Tablets)*/
+/* ****************************** */
+
+/* (944 / 16 = 59) */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+    /* 8px / 16px = 0.50 = 50% */
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 7rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    /* padding: 3.2rem 4.8rem 4.8rem 4.8rem; */
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .testimonials-section {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
