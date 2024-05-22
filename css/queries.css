@@ -164,4 +164,133 @@
   .footer {
     padding: 7.2rem 0;
   }
+
+  /* ****************************** */
+  /*        MOBILE NAVIGATION       */
+  /* ****************************** */
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(246, 246, 246, 0.90);
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+
+    /* Hide navigation */
+    /* display:none - Allows NO Transitions at all */
+    /* display: none; */
+
+    /* 1.  Hide it visually */
+    opacity: 0;
+
+    /* 2. Make it inaccessible to mouse and key */
+    pointer-events: none;
+
+    /* 3. Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transition: all 0.5s ease-in;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* ****************************** */
+/*  BELOW 704px (Smaller Tablets) */
+/* ****************************** */
+
+/* (700 / 16 = 44) */
+
+@media(max-width: 44em) {
+
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diet-content {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .cta-text-box .heading-secondary {
+    margin-bottom: 2.4rem;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr)
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+
+}
+
+/* ****************************** */
+/*      BELOW 544px (Phones)      */
+/* ****************************** */
+
+/* (544/ 16 = 34) */
+
+@media(max-width : 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
 }
