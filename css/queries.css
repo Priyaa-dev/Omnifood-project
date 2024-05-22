@@ -293,4 +293,67 @@
   .grid--4-cols {
     grid-template-columns: 1fr;
   }
+
+  .hero {
+    padding: 0 3.2rem;
+    gap: 4.8rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .hero-section {
+    background-color: #fdf2e9;
+    padding: 2.4rem 0 4.8rem 0;
+  }
+
+  .btn,
+  .btn:visited,
+  .btn:link {
+    padding: 2.2rem 1.6rem;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials-section,
+  .section-how {
+    padding: 4.8rem 0;
+  }
+
+  .testimonials-container {
+    padding: 4.8rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+  }
 }
