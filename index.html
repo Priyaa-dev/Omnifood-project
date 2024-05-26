@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/queries.css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="js/script.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +20,7 @@
 
 <body>
   <!-- ==== HEADER ==== -->
-  <header class="header nav-open">
+  <header class="header">
     <a href="#">
       <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo">
     </a>
@@ -27,8 +29,8 @@
     <nav class="main-nav">
       <ul class="main-nav-list">
         <li><a class="main-nav-link" href="#how-to-section-id">How it Works</a></li>
-        <li><a class="main-nav-link" href="#meals-section-id">Meals</a></li>
-        <li><a class="main-nav-link" href="#testimonials-section-id""> Testimonials</a></li>
+        <li><a href="#meals-section-id" class="main-nav-link">Meals</a></li>
+        <li><a href="#testimonials-section-id" class="main-nav-link"> Testimonials</a></li>
         <li><a class=" main-nav-link" href="#pricing-section-id">Pricing</a></li>
         <li><a class="main-nav-link nav-cta" href="#cta-section-id">Try for Free</a></li>
       </ul>
@@ -51,8 +53,8 @@
             again.
             Tailored to your personal tastes and
             nutritional needs.</p>
-          <a href="#" class="btn btn--action margin-right-sm">Start eating well</a>
-          <a href="#" class="btn btn--info"> Learn More &darr;</a>
+          <a href="#cta-section-id" class="btn btn--action margin-right-sm">Start eating well</a>
+          <a href="#how-to-section-id" class="btn btn--info"> Learn More &darr;</a>
           <div class="delivered-meals">
             <div class="delivered-imgs">
               <img src="img/customers/customer-1.jpg" alt="Customer" />
@@ -381,7 +383,7 @@
               </li>
             </ul>
             <div class="plan-sign-up">
-              <a href="#" class="btn btn--action margin-right-sm">Start eating well</a>
+              <a href="#ca" class="btn btn--action margin-right-sm">Start eating well</a>
             </div>
           </div>
         </div>
@@ -483,7 +485,7 @@
               <a href="#" class="footer-link"><ion-icon name="logo-twitter" class="social-icon"></ion-icon></a>
             </li>
           </ul>
-          <p class="copyright">Copyright &copy; 2027 by Omnifood Inc. All rights reserved</p>
+          <p class="copyright">Copyright &copy; <span class="year">2027</span> by Omnifood Inc. All rights reserved</p>
         </div>
         <div class="address-col">
           <p class="footer-heading">Contact Us</p>

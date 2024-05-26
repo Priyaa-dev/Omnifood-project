@@ -349,11 +349,17 @@
     gap: 1.2rem;
   }
 
+  .cta-section {
+    /* order: top / right / bottom / left */
+    padding: 0;
+  }
+
   .cta {
     grid-template-columns: 1fr;
   }
 
   .cta-img-box {
     height: 32rem;
+    grid-row: 1;
   }
 }
