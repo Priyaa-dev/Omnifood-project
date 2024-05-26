@@ -4,10 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Always include this (below) line of meta tag -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/queries.css">
+  <meta name="description"
+    content="Omnifood is a AI-powered food subscription that will make you eat healthy again, 365 days per year. It is tailored to your personal tastes and nutritional needs." />
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script defer src="js/script.js"></script>
@@ -70,8 +76,16 @@
           </div>
         </div>
         <div class=" hero-img-box">
-          <img src="img/hero.png" class="hero-img"
-            alt="Woman enjoying food, food bowls on the table, ready to eat healthy meals">
+
+          <picture>
+            <source srcset="img/hero-min.webp" type="image/webp" />
+            <source srcset="img/hero-min.png" type="image/png" />
+
+            <!-- Below it should be the fall back version which is supported by all browsers -->
+            <img src="img/hero-min.png" class="hero-img"
+              alt="Woman enjoying food, food bowls on the table, ready to eat healthy meals">
+          </picture>
+
         </div>
       </div>
     </section>
